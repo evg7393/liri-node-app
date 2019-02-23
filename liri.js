@@ -68,7 +68,7 @@ spotify.search({ type: 'track', query: 'songName' }, function(err, data) {
     //Appends info into log.txt file
     var logSong = "=====Begin Spotify Log Entry======" + "n\Artist: " + data.tracks.items[0].album.artist[0].name
 
-    fs.appendFile("log.txt", logSong, function (err {
+    fs.appendFile("log.txt", logSong, function (err) {
         if (err) throw err;
     });
 
